@@ -6,6 +6,8 @@ vim.keymap.set('n', '<leader>fs', ':w<CR>', { desc = '[F]ile [s]ave' })
 vim.keymap.set('n', '<leader>fq', ':q<CR>', { desc = '[F]ile [Q]uit' })
 vim.keymap.set('n', '<leader>fS', ':so %<CR>', { desc = '[F]ile [S]ource' })
 vim.keymap.set('i', 'jk', '<Esc>', { desc = 'Exit insert mode' })
+vim.keymap.set('n', '<leader>pv', ':vertical split<CR>', { desc = '[P]ane [V]ertical split' })
+vim.keymap.set('n', '<leader>ph', ':horizontal split<CR>', { desc = '[P]ane [H]orizontal split' })
 
 -- NeoTree keybinds
 vim.keymap.set('n', '<leader>fd', ':NeoTreeFloatToggle<CR>', { desc = '[F]ile [D]irectory' })
