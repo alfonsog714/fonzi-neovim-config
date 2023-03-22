@@ -23,6 +23,7 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 
 -- Vim fugitive keybinds
 vim.keymap.set('n', '<leader>go', ':Git<CR>', { desc = '[G]it [O]pen' })
+vim.keymap.set('n', '<leader>gb', ':Git blame<CR>', { desc = '[G]it [B]lame' })
 
 -- global settings for nvim
 vim.wo.scrolloff = 8
