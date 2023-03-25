@@ -10,7 +10,7 @@ vim.keymap.set('n', '<leader>pv', ':vertical split<CR>', { desc = '[P]ane [V]ert
 vim.keymap.set('n', '<leader>ph', ':horizontal split<CR>', { desc = '[P]ane [H]orizontal split' })
 
 -- NeoTree keybinds
-vim.keymap.set('n', '<leader>fd', ':NeoTreeFloatToggle<CR>', { desc = '[F]ile [D]irectory' })
+vim.keymap.set('n', '<leader>fd', ':NeoTreeFocusToggle<CR>', { desc = '[F]ile [D]irectory' })
 
 -- Toggleterm keybinds
 vim.keymap.set('n', '<leader>t', ':ToggleTerm<CR>', { desc = "[T]erminal" })
