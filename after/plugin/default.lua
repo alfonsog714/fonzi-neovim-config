@@ -25,6 +25,10 @@ vim.cmd('autocmd! TermOpen term://* lua set_terminal_keymaps()')
 vim.keymap.set('n', '<leader>go', ':Git<CR>', { desc = '[G]it [O]pen' })
 vim.keymap.set('n', '<leader>gb', ':Git blame<CR>', { desc = '[G]it [B]lame' })
 
+-- Harpoon keybinds
+vim.keymap.set('n', '<leader>ha', ':lua require("harpoon.mark").add_file()<CR>', { desc = '[H]arpoon [A]dd' })
+vim.keymap.set('n', '<leader>hm', ':lua require("harpoon.ui").toggle_quick_menu()<CR>', { desc = '[H]arpoon [M]enu' })
+
 -- global settings for nvim
 vim.wo.scrolloff = 8
 vim.o.ts = 2
